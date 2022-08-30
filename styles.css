@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  animation: changeBg 3s infinite alternate linear;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@keyframes changeBg{
+  0%{
+    background: rgba(62, 161, 219, 1);
+  }
+  25%{
+    background: rgba(72, 130, 222, 1);
+  }
+  50%{
+    background: rgba(79, 99, 228, 1);
+  }
+  75%{
+    background: rgba(86, 70, 232, 1);
+  }
+  100%{
+    background: rgba(93, 52, 236, 1);
+  }
+}
+form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  width: 90vw;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.note{
+  width: 50%;
+}
+.title {
+  font-family: 'Dosis', sans-serif;
+  filter: drop-shadow(1px 1px 3px #FDFD96);
+    -webkit-filter: drop-shadow(1px 1px 3px #FDFD96);
+    -moz-filter: drop-shadow(1px 1px 3px #FDFD96);
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+  transition: all 1s;
+}
+.title:hover{
+  transform: rotateZ(360deg)
+}
+.inputForm {
+  border: none;
+  padding: 10px;
+  border: 1px solid #eee;
+  outline: none;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.inputForm::placeholder {
+  padding: 0px;
+}
+
+.btnCreate {
+  padding: 10px 15px;
+  animation: changeBt 1s infinite alternate linear;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+@keyframes changeBt{
+  0%{
+    background: rgba(255, 161, 200, 1);
+  }
+  25%{
+    background: rgba(235, 130, 170, 1);
+  }
+  50%{
+    background: rgba(215, 99, 150, 1);
+  }
+  75%{
+    background: rgba(195, 70, 120, 1);
+  }
+  100%{
+    background: rgba(175, 70, 100, 1);
+  }
+}
+.datos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.datos img{
+  height: 40px;
+  margin: 20px;
+  
+}
+.datos span{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 60vh;
+  height: 60vh;
+}
+
+.card {
+  width: 90%;
+  padding: 15px;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.task {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.icon:hover {
+  color: greenyellow;
+}
+
+.completeIcon {
+  color: green;
+}
+
+.trashIcon:hover {
+  color: #f00;
+}
+
+.deleteConfirmationPop {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
+@media screen and (max-width: 1100px) {
+  .mainCard {
+    width: 85vw;
+    height: 90vh;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+.note{
+  width: 100%;
+}
+}

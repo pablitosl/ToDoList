@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast note
+    </title>
+    <link rel="icon" type="image/png" href="./assets/rayo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainCard">
+        <div class="note">
+          <div class="title"><img src="./assets/rayo.png" /></div>
+          <div>
+            <form action="">
+              <input
+                type="text"
+                name="task"
+                placeholder="Nombre de la tarea"
+                class="inputForm"
+                autocomplete="off"
+                data-form-input
+              />
+              <button type="submit" class="btnCreate" data-form-btn>
+                Agregar <i class="fas fa-plus-circle"></i>
+              </button>
+            </form>
+          </div>
+          <div class="datos">
+            <a href="https://www.linkedin.com/in/pablo-david-castro/" target="_blank"><img src="assets/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/pablitosl" target="_blank"><img src="assets/github.png" alt="github"></a>
+            <span>&copy; Pablo Castro</span>
+          </div>
+        </div>
+        
+        <ul class="cardsList" data-list>
+        </ul>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
