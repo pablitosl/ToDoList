@@ -28,3 +28,21 @@ const createTask = (evento) => {
 
 //Arrow functions o funciones anonimas
 btn.addEventListener('click', createTask);
+
+
+
+//Toggle, para cambiar el color del fondo
+
+const toggle = document.getElementById('btn');
+const body = document.getElementById('back');
+const redes = document.querySelector('.datos');
+
+toggle.addEventListener("click", () =>{
+  if(toggle.checked == true){
+    body.classList.add('dark');
+    redes.classList.add('redesDark')
+  }else{
+    body.classList.remove('dark');
+    redes.classList.remove('redesDark')
+  };
+});
