@@ -19,9 +19,7 @@ if(taskList.length !== 0) {
         taskContent.appendChild(titleTask);
         task.appendChild(taskContent);
         task.appendChild(deleteIcon());
-        lista.appendChild(task);
-        
-        localStorage.setItem('tasks', JSON.stringify(taskList));
+        lista.appendChild(task);   
     });
-};
+}
 };

@@ -4,6 +4,7 @@ import init from './components/localStorage.js';
 
 const btn = document.querySelector('[data-form-btn]');
 const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
+
 const createTask = (evento) => {
   evento.preventDefault();
   
